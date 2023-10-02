@@ -36,7 +36,7 @@ namespace Tyuiu.SavenkovaME.Sprint2.Task0.V27
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             bool[] result = ds.GetCompareOperations(x, y);
-            for (int i = 0; i < result.Length; i++)
+            for (int i = 0; i < 6; i++)
             {
                 Console.WriteLine(result[i]);
             }
