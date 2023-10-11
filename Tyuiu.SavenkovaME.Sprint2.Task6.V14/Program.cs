@@ -30,21 +30,24 @@ namespace Tyuiu.SavenkovaME.Sprint2.Task6.V14
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                             *");
             Console.WriteLine("********************************************************************************");
 
+            Console.WriteLine("Введите номер дня недели, с которого начинается 1 января:");
+            int d = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("Введите целое число:");
             int value = Convert.ToInt32(Console.ReadLine());
-            string res = ds.FindDayName(value);
+            string res = ds.FindDayName(value, d);
 
             Console.WriteLine("********************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                   *");
             Console.WriteLine("********************************************************************************");
 
-            if (value >= 1 && value <= 365)
+            if (value >= 1 && value <= 365 && d >= 1 && d <= 7)
             {
                 Console.WriteLine(res);
             }
             else
             {
-                Console.WriteLine($"Неправильное значение, {value}");
+                Console.WriteLine($"Неправильное значение, {value}, {d}");
             }
             Console.ReadKey();
         }
