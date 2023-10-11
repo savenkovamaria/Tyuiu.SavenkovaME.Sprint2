@@ -42,8 +42,8 @@ namespace Tyuiu.SavenkovaME.Sprint2.Task6.V14
             Console.WriteLine("********************************************************************************");
 
             if (value >= 1 && value <= 365 && d >= 1 && d <= 7)
-            {
-                Console.WriteLine(res);
+            { 
+                Console.WriteLine($"Если 1 января это d = {d} день недели, то k = {value} это - "+res);
             }
             else
             {
